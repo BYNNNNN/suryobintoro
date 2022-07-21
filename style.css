@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(15, 16, 16);
+}
+
+.header{
+	display: flex;
+	height: 66px;
+	top: 0;
+	margin: 0;
+    bottom: 0;
+	background: rgb(154, 153, 153);
+    border-bottom: 3px solid;
+}
+.nama{
+	flex: 1;
+}
+.nama ul{
+	display: flex;
+	list-style-type: none;
+	float: left;
+}
+.nama li{
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.nama a{
+	text-decoration: none;
+	color: rgb(67, 36, 111);
+}
+.menu{
+	flex: 1;
+    background-color: rgb(154, 153, 153);
+    color: rgb(218, 124, 77);
+}
+.menu ul{
+	display: flex;
+	list-style-type: none;
+	float: right;
+    
+}
+.menu li{
+	font-size: 30px;
+	margin-right: 40px;
+
+}
+.menu a:hover{
+	text-decoration: none;
+    background-color: rgb(154, 153, 153);
+	color: rgb(218, 124, 77);
+}
+
+main {
+	width:100%;
+}
+
+.banner {
+    height: 87vh;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.banner:after{
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(157, 157, 161, 0.463);
+}
+
+.banner h2{
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid;
+    background-color: rgb(154, 153, 153);
+	color: rgb(218, 124, 77);
+}
+.banner h2:hover{
+    text-decoration: none;
+    background-color: rgb(252, 247, 247);
+	color: rgb(218, 124, 77);
+}
+
+.gambar{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    padding: 40px;
+    color: black;
+}
+.gambar .foto.img{
+    height: 500;
+    width: 500;
+}
+.foto{
+    border: 1px solid rgb(218, 124, 77);
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.foto a{
+    border: 1px solid rgb(218, 124, 77);
+    padding: 1px;
+    color: peachpuff;
+    background-color: peru;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer{
+	position: absolute;
+	bottom: 14;
+	width: 100%;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	text-align: center;
+	background-color:rgb(28, 28, 28);
+}
+footer i{
+	color: #ffffff;
+}
+
